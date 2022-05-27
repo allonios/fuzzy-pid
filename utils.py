@@ -65,7 +65,11 @@ def plot_histories(
 
     for key in plot_history.keys():
         label = key.replace("_", " ").title()
+        print(label)
         plt.plot(plot_history[key], label=label)
+        plt.legend(loc="best")
 
     if save:
         plt.savefig(save)
+
+    plt.show()

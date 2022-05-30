@@ -11,7 +11,7 @@ simple_motor = SimpleMotor(**config)
 pid_motor = PIDMotor(
     **config,
     k_p=2,
-    k_i=0,
+    k_i=0.01,
     k_d=0,
 )
 
